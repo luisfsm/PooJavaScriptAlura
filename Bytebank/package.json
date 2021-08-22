@@ -1,0 +1,19 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto Bytebank poo em js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisfsm/PooJavaScriptAlura.git"
+  },
+  "author": "Luis Felipe / Curso Alura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisfsm/PooJavaScriptAlura/issues"
+  },
+  "homepage": "https://github.com/luisfsm/PooJavaScriptAlura#readme"
+}
