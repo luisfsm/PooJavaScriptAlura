@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/luisfsm/PooJavaScriptAlura/issues"
   },
-  "homepage": "https://github.com/luisfsm/PooJavaScriptAlura#readme"
+  "homepage": "https://github.com/luisfsm/PooJavaScriptAlura#readme",
+  "type": "module"
 }
