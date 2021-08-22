@@ -1,11 +1,22 @@
+import { Cliente } from "../Clientes/Cliente.js";
 export class ContaCorrente{
     agencia = "1001";
     _saldo = 0;    
     _cliente;
 
+    set cliente(novoCliente){
 
-    AdicionarCliente(cliente){
-        this._cliente = cliente
+        if(novoCliente instanceof Cliente){
+            this._cliente =    novoCliente
+        }
+    }
+
+    get saldo(){
+        return this._saldo;
+    }
+
+    get cliente(){
+        return this._cliente
     }
 
     recuperaSaldo(){
