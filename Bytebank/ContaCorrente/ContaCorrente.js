@@ -1,6 +1,12 @@
 export class ContaCorrente{
     agencia = "1001";
     _saldo = 0;    
+    _cliente;
+
+
+    AdicionarCliente(cliente){
+        this._cliente = cliente
+    }
 
     recuperaSaldo(){
         return this._saldo;
@@ -13,15 +19,13 @@ export class ContaCorrente{
     }
 
     sacar(valor){
-        if(valor> this._saldo){
-            console.log("Saldo insuficiente");
-        }else{
-            this._saldo-= valor;
-            return this.valor;
+        if(this._saldo> valor){
+            this._saldo -= valor;
         }
     }
-    transferencia(ContaCorrente){
-
+    transferencia(valor,ContaCorrente){
+        this.sacar(valor)
+        ContaCorrente.DepositarSaldo(valor);
     }
 
 }
