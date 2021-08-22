@@ -1,19 +1,12 @@
-//import Cliente from '/Cliente/Cliente.js'
-class Cliente {
-    nome;
-    cpf;
-}
 
-class ContaCorrente{
-    agencia = "1001";
-    saldo = 0;    
-}
+import { Cliente } from "./Clientes/Cliente.js";
+import { ContaCorrente } from "./ContaCorrente/ContaCorrente.js";
+
+const cliente = new Cliente();
 
 
-cliente = new Cliente();
+const contaCorrenteCLiente = new ContaCorrente();
 
-cliente.nome = "Luis Felipe";
-cliente.cpf ="1112938111";
-
-
-console.log(cliente)
+contaCorrenteCLiente.DepositarSaldo(100)
+const valorSacado= contaCorrenteCLiente.sacar(50)
+console.log(contaCorrenteCLiente)
