@@ -12,6 +12,8 @@ const contaCorrenteCLiente2 = new ContaPoupanca(10,cliente2,1001);
 contaCorrenteCLiente2.DepositarSaldo(200)
 contaCorrenteCLiente.transferencia(100, contaCorrenteCLiente2)
 
+
 console.log(contaCorrenteCLiente)
 console.log(contaCorrenteCLiente2)
+
 console.log(Conta.contador)
